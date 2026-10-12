@@ -5,7 +5,7 @@ from crm_database import init_crm_db, fetch_crm_data
 from classifier import classify_sentiment
 
 st.set_page_config(
-    page_title="Indian Customer Satisfaction CRM",
+    page_title="Customer Satisfaction CRM",
     page_icon="📊",
     layout="wide"
 )
@@ -30,7 +30,7 @@ st.markdown("""
 init_crm_db()
 df = fetch_crm_data()
 
-st.title("🇮🇳 Indian Customer Satisfaction CRM Dashboard")
+st.title("Customer Satisfaction CRM Dashboard")
 st.markdown("Advanced NLP-powered CRM platform analyzing local customer feedback, subscription tiers, and sentiment metrics.")
 
 # Sidebar Filters
